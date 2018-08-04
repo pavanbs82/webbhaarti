@@ -4,12 +4,56 @@
 	<title>
 	  Manage Contact
 	</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" /> 
 	<link rel="stylesheet" type="text/css" href="assets/style.css" />
 </head>
 <body>
 	<header>
-		<img src="assets/logo.png" alt="WEB POST" title="WEB POST" />
+		<div class="logo">
+			<a href="index.php"><img src="assets/logo.png" alt="WEB POST" title="WEB POST" /></a>
+		</div>
+		<div class="userName">
+			Welcome! <span>User_Name</span>
+		</div>
+		<div class="search">
+			<form method="post" action="">
+				<input type="text" name="search" placeholder="Search" maxlength="250" />
+				<button class="searchIcon"></button>
+			</form>
+		</div>
 	</header>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#"><span class="sidenavIcon1"></span>Dashboard</a>
+	  <div class="leftNavSeperator"></div>
+	  <a href="#"><span class="sidenavIcon2"></span>Manage Contact</a>
+	  <div class="leftNavSeperator"></div>
+	  <a href="#"><span class="sidenavIcon3"></span>Manage Campaign</a>
+	  <div class="leftNavSeperator"></div>
+	  <a href="#"><span class="sidenavIcon4"></span>View Report</a>
+	  <div class="leftNavSeperator"></div>
+	  <a href="#"><span class="sidenavIcon5"></span>Profile</a>
+	  <div class="leftNavSeperator"></div>
+	  <a href="#"><span class="sidenavIcon6"></span>Logout</a>
+	</div>
+	<div id="main">
+	  <span class="hamburger" onclick="openNav()">&#9776; <h1>Manage Contacts</h1></span>
+	  <div class="ContentWrap">
+	  	You can add one contact at a time or paste contacts into a form or upload a file (Excel, text, CSV file).
+	  	<div class="AddContactWrap">
+	  		<h2>Add Contacts</h2>
+	  	</div>
+	  </div>
+	</div>
+	<script>
+	function openNav(){
+	    document.getElementById("mySidenav").style.width = "318px";
+	    document.getElementById("main").style.marginLeft = "318px";
+	}
+	function closeNav(){
+	    document.getElementById("mySidenav").style.width = "0";
+	    document.getElementById("main").style.marginLeft= "0";
+	}
+	</script>
 </body>
 </html>

@@ -1,8 +1,181 @@
+/*CSS Reset ST*/
 *{
 	margin: 0;
 	padding: 0;
 }
+img{
+	border: 0;
+}
+a{
+	outline: 0;
+}
+label{
+	cursor: pointer;
+}
+input{
+	font-family: 'Montserrat', sans-serif;
+}
+button{
+	border: 0;
+	outline: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	display: inline-block;
+}
+/*CSS Reset ED*/
+body{
+	background: #f1f4f7;
+	font-family: 'Montserrat', sans-serif;
+	color: #444;
+}
+/*Header ST*/
 header{
 	background: #222;
 	padding: 6px 15px 10px;
+	display: flex;
+	align-items: center;
 }
+.logo{
+	flex: 1;
+}
+.userName{
+	color: #f1f4f7;
+	font-size: 22px;
+	font-weight: 300;
+	margin: 0 34px 0 0;
+}
+.userName span{
+	max-width: 324px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+    vertical-align: middle;
+}
+.search{
+	background: #f1f4f7;
+	border-radius: 50px;
+	width: 288px;
+	padding: 8px 8px 8px 18px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #787878;
+	box-sizing: border-box;  
+}
+.search input{
+	width: 220px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	background: #f1f4f7;
+	border: 0;
+	outline: 0;
+}
+.searchIcon{
+	background: url(icons.png) left top no-repeat;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+}
+/*Header ED*/
+/*Drawer ST*/
+.sidenav{
+    height: calc(100vh - 89px);
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 89px;
+    left: 0;
+    background: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a{
+    padding: 0 8px 0 18px;
+    height: 62px;
+    line-height: 62px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #444;
+    display: block;
+    transition: 0.3s;
+    margin: -2px 0 0;
+    box-sizing: border-box;
+}
+.sidenav a:hover{
+    color: #f1f1f1;
+    background: #19cf9f;
+}
+.sidenavIcon1, .sidenavIcon2, .sidenavIcon3, .sidenavIcon4, .sidenavIcon5, .sidenavIcon6{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 14px 0 0;
+}
+.sidenavIcon1{
+	background: url(icons.png) left -31px no-repeat;
+	width: 28px;
+	height: 29px;
+}
+.sidenavIcon2{
+	background: url(icons.png) left -61px no-repeat;
+	width: 30px;
+	height: 32px;
+}
+.sidenavIcon3{
+	background: url(icons.png) left -94px no-repeat;
+	width: 28px;
+	height: 25px;
+}
+.sidenavIcon4{
+	background: url(icons.png) left -120px no-repeat;
+	width: 28px;
+	height: 31px;
+}
+.sidenavIcon5{
+	background: url(icons.png) left -152px no-repeat;
+	width: 23px;
+	height: 25px;
+}
+.sidenavIcon6{
+	background: url(icons.png) left -178px no-repeat;
+	width: 22px;
+	height: 27px;
+}
+.leftNavSeperator{
+	border: 1px dashed #939393;
+	width: 266px;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidenav a:hover.closebtn{
+	background-color: transparent;
+	color: #444;
+}
+#main{
+    transition: margin-left .5s;
+    padding: 16px;
+}
+.hamburger, .hamburger h1{
+	font-size:26px;
+	font-weight: 300;
+	cursor:pointer;
+}
+/*Drawer ED*/
+/*Page Layout ST*/
+.ContentWrap{
+	margin: 7px 12px 12px 32px;
+	font-size: 16px;
+	font-weight: 400;
+}
+.AddContactWrap{
+	margin: 20px 0 5px;
+}
+/*Page Layout ED*/
