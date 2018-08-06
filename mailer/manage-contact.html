@@ -22,124 +22,126 @@
 			</form>
 		</div>
 	</header>
-	<div id="mySidenav" class="sidenav">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="#"><span class="sidenavIcon1"></span>Dashboard</a>
-	  <div class="leftNavSeperator"></div>
-	  <a href="#" class="active"><span class="sidenavIcon2Active"></span>Manage Contact</a>
-	  <div class="leftNavSeperator"></div>
-	  <a href="#"><span class="sidenavIcon3"></span>Manage Campaign</a>
-	  <div class="leftNavSeperator"></div>
-	  <a href="#"><span class="sidenavIcon4"></span>View Report</a>
-	  <div class="leftNavSeperator"></div>
-	  <a href="#"><span class="sidenavIcon5"></span>Profile</a>
-	  <div class="leftNavSeperator"></div>
-	  <a href="#"><span class="sidenavIcon6"></span>Logout</a>
-	</div>
-	<div id="main">
-	  <span class="hamburger" onclick="openNav()">&#9776; <h1>Manage Contacts</h1></span>
-	  <div class="ContentWrap">
-	  	You can add one contact at a time or paste contacts into a form or upload a file (Excel, text, CSV file).
-	  	<div class="ContactOptionWrap">
-	  		<div class="widget1">
-	  			<h2>Add Contacts</h2>
-	  			<form method="post" action="">
-	  				<div>
-	  					<input type="text" name="name" placeholder="Name" maxlength="250" />
-	  					<div class="error">
-	  						Please enter Name
-	  					</div>
-	  					<div class="spacer_6"></div>
-	  				</div>
-	  				<div>
-	  					<input type="email" name="email_address" placeholder="E-Mail Address" maxlength="250" />
-	  					<div class="error">
-	  						Please enter E-Mail Address
-	  					</div>
-	  					<div class="spacer_6"></div>
-	  				</div>
-	  				<div>
-	  					<select name="add_to_group" maxlength="250">
-		  					<option selected="selected">Add to group</option>
-		  				</select>
-	  				</div>
-	  				<button name="add_new_group" class="addGroupButton">Add new group</button>
-	  				<button name="add_contact" class="addContactButton">ADD Contact</button>
-	  			</form>
-	  		</div>
+	<div class="mainWrap">
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="#"><span class="sidenavIcon1"></span>Dashboard</a>
+		  <div class="leftNavSeperator"></div>
+		  <a href="#" class="active"><span class="sidenavIcon2Active"></span>Manage Contact</a>
+		  <div class="leftNavSeperator"></div>
+		  <a href="#"><span class="sidenavIcon3"></span>Manage Campaign</a>
+		  <div class="leftNavSeperator"></div>
+		  <a href="#"><span class="sidenavIcon4"></span>View Report</a>
+		  <div class="leftNavSeperator"></div>
+		  <a href="#"><span class="sidenavIcon5"></span>Profile</a>
+		  <div class="leftNavSeperator"></div>
+		  <a href="#"><span class="sidenavIcon6"></span>Logout</a>
+		</div>
+		<div id="main">
+		  <span class="hamburger" onclick="openNav()">&#9776; <h1>Manage Contacts</h1></span>
+		  <div class="ContentWrap">
+		  	You can add one contact at a time or paste contacts into a form or upload a file (Excel, text, CSV file).
+		  	<div class="ContactOptionWrap">
+		  		<div class="widget1">
+		  			<h2>Add Contacts</h2>
+		  			<form method="post" action="">
+		  				<div>
+		  					<input type="text" name="name" placeholder="Name" maxlength="250" />
+		  					<div class="error">
+		  						Please enter Name
+		  					</div>
+		  					<div class="spacer_6"></div>
+		  				</div>
+		  				<div>
+		  					<input type="email" name="email_address" placeholder="E-Mail Address" maxlength="250" />
+		  					<div class="error">
+		  						Please enter E-Mail Address
+		  					</div>
+		  					<div class="spacer_6"></div>
+		  				</div>
+		  				<div>
+		  					<select name="add_to_group" maxlength="250">
+			  					<option selected="selected">Add to group</option>
+			  				</select>
+		  				</div>
+		  				<button name="add_new_group" class="addGroupButton">Add new group</button>
+		  				<button name="add_contact" class="addContactButton">ADD Contact</button>
+		  			</form>
+		  		</div>
 
-	  		<div class="widget2">
-	  			<h3>Paste Contacts</h3>
-	  			<form method="post" action="">
-	  				<div>
-	  					<textarea name="paste_contacts" maxlength="2500" placeholder="Paste Contacts"></textarea>
-	  					<div class="error">
-	  						Please Paste Contacts
-	  					</div>
-	  					<div class="spacer_6"></div>
-	  				</div>
-	  				<div>
-	  					<select name="add_to_group" maxlength="250">
-		  					<option selected="selected">Add to group</option>
-		  				</select>
-	  				</div>
-	  				<button name="add_new_group" class="addGroupButton">Add new group</button>
-	  				<button name="add_contact" class="addContactButton">ADD Contact</button>
-	  			</form>
-	  		</div>
+		  		<div class="widget2">
+		  			<h3>Paste Contacts</h3>
+		  			<form method="post" action="">
+		  				<div>
+		  					<textarea name="paste_contacts" maxlength="2500" placeholder="Paste Contacts"></textarea>
+		  					<div class="error">
+		  						Please Paste Contacts
+		  					</div>
+		  					<div class="spacer_6"></div>
+		  				</div>
+		  				<div>
+		  					<select name="add_to_group" maxlength="250">
+			  					<option selected="selected">Add to group</option>
+			  				</select>
+		  				</div>
+		  				<button name="add_new_group" class="addGroupButton">Add new group</button>
+		  				<button name="add_contact" class="addContactButton">ADD Contact</button>
+		  			</form>
+		  		</div>
 
-	  		<div class="widget3">
-	  			<h4>Select File</h4>
-	  			<form method="post" action="">
-	  				<div>
-	  					(You can upload Excel, text, CSV)
-	  					<div class="note">
-	  						You can easily export contact CSV file from your Outlook, Windows Mail, Mac address book, Gmail account, Hotmail account,Yahoo account or any other mail account and upload the same to your account.
-	  					</div>
-	  				</div>
-	  				<div>
-	  					<div class="uploadBtnWrapper">
-	  						<button class="uploadBtn">Upload File</button>
-	  						<input type="file" name="select_file" />
-	  					</div>
-	  					<div class="error">
-	  						Please Upload File
-	  					</div>
-	  					<div class="spacer_6"></div>
-	  				</div>
-	  				<div>
-	  					<select name="add_to_group" maxlength="250">
-		  					<option selected="selected">Add to group</option>
-		  				</select>
-	  				</div>
-	  				<button name="add_new_group" class="addGroupButton">Add new group</button>
-	  				<button name="add_contact" class="addContactButton">ADD Contact</button>
-	  			</form>
-	  		</div>
-	  	</div>
-	  	<div class="widget4">
-	  		<h5>Manage Groups</h5>
-	  		<div class="title">
-	  			You can edit or remove groups
-	  		</div>
-	  		<div class="groupList">
-	  			<div>Group Name</div>
-	  			<div>
-	  				<a href="" class="deleteIcon"></a>
-	  				<span class="iconSeperator"></span>
-	  				<a href="" class="editIcon"></a>
-	  			</div>
-	  		</div>
-	  		<div class="groupList">
-	  			<div>Group Name</div>
-	  			<div>
-	  				<a href="" class="deleteIcon"></a>
-	  				<span class="iconSeperator"></span>
-	  				<a href="" class="editIcon"></a>
-	  			</div>
-	  		</div>
-	  	</div>
-	  </div>
+		  		<div class="widget3">
+		  			<h4>Select File</h4>
+		  			<form method="post" action="">
+		  				<div>
+		  					(You can upload Excel, text, CSV)
+		  					<div class="note">
+		  						You can easily export contact CSV file from your Outlook, Windows Mail, Mac address book, Gmail account, Hotmail account,Yahoo account or any other mail account and upload the same to your account.
+		  					</div>
+		  				</div>
+		  				<div>
+		  					<div class="uploadBtnWrapper">
+		  						<button class="uploadBtn">Upload File</button>
+		  						<input type="file" name="select_file" />
+		  					</div>
+		  					<div class="error">
+		  						Please Upload File
+		  					</div>
+		  					<div class="spacer_6"></div>
+		  				</div>
+		  				<div>
+		  					<select name="add_to_group" maxlength="250">
+			  					<option selected="selected">Add to group</option>
+			  				</select>
+		  				</div>
+		  				<button name="add_new_group" class="addGroupButton">Add new group</button>
+		  				<button name="add_contact" class="addContactButton">ADD Contact</button>
+		  			</form>
+		  		</div>
+		  	</div>
+		  	<div class="widget4">
+		  		<h5>Manage Groups</h5>
+		  		<div class="title">
+		  			Edit / Remove Groups
+		  		</div>
+		  		<div class="groupList">
+		  			<div>Group Name</div>
+		  			<div>
+		  				<a href="" class="deleteIcon"></a>
+		  				<span class="iconSeperator"></span>
+		  				<a href="" class="editIcon"></a>
+		  			</div>
+		  		</div>
+		  		<div class="groupList">
+		  			<div>Group Name</div>
+		  			<div>
+		  				<a href="" class="deleteIcon"></a>
+		  				<span class="iconSeperator"></span>
+		  				<a href="" class="editIcon"></a>
+		  			</div>
+		  		</div>
+		  	</div>
+		  </div>
+		</div>
 	</div>
 	<script>
 	function openNav(){

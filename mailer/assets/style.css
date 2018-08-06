@@ -77,7 +77,7 @@ header{
 	text-overflow: ellipsis;
 	overflow: hidden;
 	display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .search{
 	background: #f1f4f7;
@@ -107,11 +107,11 @@ header{
 /*Header ED*/
 /*Drawer ST*/
 .sidenav{
-    height: calc(100vh - 89px);
+    height: 100%;
     width: 0;
-    position: fixed;
+    position: absolute;
     z-index: 1;
-    top: 89px;
+    top: 0;
     left: 0;
     background: #fff;
     overflow-x: hidden;
@@ -138,6 +138,7 @@ header{
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 14px 0 0;
+	transition: 0.5s;
 }
 .sidenavIcon1, .sidenavIcon1Active{
 	background: url(icons.png) left -31px no-repeat;
@@ -218,16 +219,19 @@ header{
     padding: 16px;
 }
 .hamburger, .hamburger h1, .widget1 h2, .widget2 h3, .widget3 h4, .widget4 h5{
-	font-size: 26px;
-	font-weight: 300;
+	font-size: 22px;
+	font-weight: 600;
 	cursor: pointer;
 }
 /*Drawer ED*/
 /*Page Layout ST*/
+.mainWrap{
+	position: relative;
+}
 .ContentWrap{
 	margin: 7px 12px 12px 32px;
-	font-size: 16px;
-	font-weight: 400;
+	font-size: 14px;
+	font-weight: 600;
 }
 .ContactOptionWrap{
 	margin: 20px 0 5px;
@@ -250,7 +254,7 @@ header{
 	padding: 4px 0 6px;
 }
 .addContactButton{
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 700;
 	padding: 15px 0 14px;
 }
@@ -293,22 +297,25 @@ header{
 .groupList{
 	border-bottom: 1px dashed #939393;
 	display: flex;
-	padding: 10px 0;
+	padding: 7px 0;
 	font-size: 24px;
 	font-weight: 300;
 }
 .groupList div:nth-child(1){
 	flex: 1;
 }
-.deleteIcon{
-	background: url(icons.png) left -381px no-repeat;
-	width: 22px;
-	height: 28px;
+.deleteIcon,.editIcon{
+	width: 24px;
+	height: 24px;
 	display: inline-block;
 	vertical-align: middle;
 }
+.deleteIcon{
+	background: url(icons.png) left -381px no-repeat;
+}
+
 .iconSeperator{
-	margin: 0 7px 0 10px;
+	margin: 0 10px 0 0;
     display: inline-block;
     vertical-align: middle;
     width: 2px;
@@ -316,10 +323,6 @@ header{
     background: #444;
 }
 .editIcon{
-	background: url(icons.png) left -410px no-repeat;
-	width: 29px;
-	height: 29px;
-	display: inline-block;
-	vertical-align: middle;
+	background: url(icons.png) left -405px no-repeat;
 }
 /*Page Layout ED*/
