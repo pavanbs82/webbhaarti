@@ -1,8 +1,328 @@
+/*CSS Reset ST*/
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
+img{
+	border: 0;
+}
+a{
+	outline: 0;
+}
+label{
+	cursor: pointer;
+}
+select{
+	cursor: pointer;
+}
+textarea{
+	resize: none;
+}
+input,select,textarea{
+	font-family: 'Montserrat', sans-serif;
+	border: 1px solid #9e9f9f;
+	border-radius: 3px;
+	padding: 6px 10px;
+	font-size: 16px;
+	font-weight: 300;
+	color: #a7a4a4;
+	width: 100%;
+	background: #f1f4f7;
+}
+button{
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+h1,h2,h3,h4,h5,h6{
+	display: inline-block;
+}
+/*CSS Reset ED*/
+/*Common Styles ST*/
+.spacer_6{
+	padding: 6px 0;
+}
+.error{
+	font-size: 12px;
+	color: #ff0000;
+	padding: 4px 0 0 0;
+	display: none;
+}
+/*Common Styles ED*/
+body{
+	background: #f1f4f7;
+	font-family: 'Montserrat', sans-serif;
+	color: #444;
+}
+/*Header ST*/
 header{
 	background: #222;
 	padding: 6px 15px 10px;
+	display: flex;
+	align-items: center;
 }
+.logo{
+	flex: 1;
+}
+.userName{
+	color: #f1f4f7;
+	font-size: 22px;
+	font-weight: 300;
+	margin: 0 34px 0 0;
+}
+.userName span{
+	max-width: 324px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+    vertical-align: top;
+}
+.search{
+	background: #f1f4f7;
+	border-radius: 50px;
+	width: 288px;
+	padding: 8px 8px 8px 18px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #787878;
+}
+.search input{
+	width: 220px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	background: #f1f4f7;
+	border: 0;
+	outline: 0;
+}
+.searchIcon{
+	background: url(icons.png) left top no-repeat;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+}
+/*Header ED*/
+/*Drawer ST*/
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a{
+    padding: 0 8px 0 18px;
+    height: 62px;
+    line-height: 62px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #444;
+    display: block;
+    transition: 0.3s;
+    margin: -2px 0 0;
+}
+.sidenav a:hover, .sidenav .active{
+    color: #f1f1f1;
+    background: #19cf9f;
+}
+.sidenavIcon1, .sidenavIcon2, .sidenavIcon3, .sidenavIcon4, .sidenavIcon5, .sidenavIcon6, .sidenavIcon1Active, .sidenavIcon2Active, .sidenavIcon3Active, .sidenavIcon4Active, .sidenavIcon5Active, .sidenavIcon6Active{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 14px 0 0;
+	transition: 0.5s;
+}
+.sidenavIcon1, .sidenavIcon1Active{
+	background: url(icons.png) left -31px no-repeat;
+	width: 28px;
+	height: 29px;
+}
+.sidenav a:hover .sidenavIcon1, .sidenavIcon1Active{
+	background: url(icons.png) left -61px no-repeat;
+	width: 28px;
+	height: 29px;
+}
+.sidenavIcon2{
+	background: url(icons.png) left -91px no-repeat;
+	width: 30px;
+	height: 32px;
+}
+.sidenav a:hover .sidenavIcon2, .sidenavIcon2Active{
+	background: url(icons.png) left -124px no-repeat;
+	width: 30px;
+	height: 32px;
+}
+.sidenavIcon3{
+	background: url(icons.png) left -157px no-repeat;
+	width: 28px;
+	height: 25px;
+}
+.sidenav a:hover .sidenavIcon3, .sidenavIcon3Active{
+	background: url(icons.png) left -183px no-repeat;
+	width: 28px;
+	height: 25px;
+}
+.sidenavIcon4{
+	background: url(icons.png) left -209px no-repeat;
+	width: 28px;
+	height: 31px;
+}
+.sidenav a:hover .sidenavIcon4, .sidenavIcon4Active{
+	background: url(icons.png) left -241px no-repeat;
+	width: 28px;
+	height: 31px;
+}
+.sidenavIcon5{
+	background: url(icons.png) left -273px no-repeat;
+	width: 23px;
+	height: 25px;
+}
+.sidenav a:hover .sidenavIcon5, .sidenavIcon5Active{
+	background: url(icons.png) left -299px no-repeat;
+	width: 23px;
+	height: 25px;
+}
+.sidenavIcon6{
+	background: url(icons.png) left -325px no-repeat;
+	width: 22px;
+	height: 27px;
+}
+.sidenav a:hover .sidenavIcon6, .sidenavIcon6Active{
+	background: url(icons.png) left -353px no-repeat;
+	width: 22px;
+	height: 27px;
+}
+.leftNavSeperator{
+	border: 1px dashed #939393;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidenav a:hover.closebtn{
+	background-color: transparent;
+	color: #444;
+}
+#main{
+    transition: margin-left .5s;
+    padding: 16px;
+}
+.hamburger, .hamburger h1, .widget1 h2, .widget2 h3, .widget3 h4, .widget4 h5{
+	font-size: 22px;
+	font-weight: 600;
+	cursor: pointer;
+}
+/*Drawer ED*/
+/*Page Layout ST*/
+.mainWrap{
+	position: relative;
+}
+.ContentWrap{
+	margin: 7px 12px 12px 32px;
+	font-size: 14px;
+	font-weight: 600;
+}
+.ContactOptionWrap{
+	margin: 20px 0 5px;
+	display: flex;
+}
+.ContactOptionWrap h2, .ContactOptionWrap h3, .ContactOptionWrap h4{
+	padding: 0 0 5px 0;
+}
+.addGroupButton, .addContactButton, .uploadBtn{
+	background: #1cb5a5;
+	border-radius: 3px;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	margin: 10px 0 0;
+}
+.addGroupButton, .uploadBtn{
+	font-size: 18px;
+	font-weight: 600;
+	padding: 4px 0 6px;
+}
+.addContactButton{
+	font-size: 22px;
+	font-weight: 700;
+	padding: 15px 0 14px;
+}
+.widget1,.widget2,.widget3{
+	width: 310px;
+}
+.widget2{
+	margin: 0 30px;
+}
+.widget2 textarea{
+	height: 78px;
+}
+.note{
+	font-size: 11px;
+	padding: 4px 0 6px;
+}
+.uploadBtnWrapper{
+	position: relative;
+	overflow: hidden;
+}
+.uploadBtn{
+	margin: 0;
+}
+.uploadBtnWrapper input[type=file]{
+	font-size: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	cursor: pointer;
+	padding: 0;
+}
+.widget4{
+	margin: 30px 0 0;
+}
+.widget4 .title{
+	padding: 8px 0 6px;
+	border-bottom: 1px dashed #939393;
+}
+.groupList{
+	border-bottom: 1px dashed #939393;
+	display: flex;
+	padding: 7px 0;
+	font-size: 24px;
+	font-weight: 300;
+}
+.groupList div:nth-child(1){
+	flex: 1;
+}
+.deleteIcon,.editIcon{
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.deleteIcon{
+	background: url(icons.png) left -381px no-repeat;
+}
+
+.iconSeperator{
+	margin: 0 10px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 2px;
+    height: 24px;
+    background: #444;
+}
+.editIcon{
+	background: url(icons.png) left -405px no-repeat;
+}
+/*Page Layout ED*/
