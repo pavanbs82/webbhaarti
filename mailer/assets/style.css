@@ -47,6 +47,10 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 12px;
 	color: #ff0000;
 	padding: 4px 0 0 0;
+	text-align: left;
+	display: none;
+}
+.none{
 	display: none;
 }
 /*Common Styles ED*/
@@ -267,13 +271,51 @@ header{
 .widget2 textarea{
 	height: 78px;
 }
-.note{
+.helpIcon{
+	background: url(icons.png) left -429px no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 0 5px;
+	cursor: pointer;
+	position: relative;
+}
+.tooltip{
+	opacity: 0;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+}
+.helpIcon:hover .tooltip{
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+	width: 250px;
+	height: 94px;
+	position: absolute;
+	top: -34px;
+	left: -260px;
+	z-index: 1;
 	font-size: 11px;
-	padding: 4px 0 6px;
+	padding: 4px 8px 6px;
+	opacity: 1;
+	background: #fff;
+	transition: opacity .5s ease;
+}
+.helpIcon:hover .rightArrow{
+	width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 21px;
+    z-index: 2;
 }
 .uploadBtnWrapper{
 	position: relative;
 	overflow: hidden;
+	margin: 20px 0 13px;
 }
 .uploadBtn{
 	margin: 0;
@@ -300,6 +342,24 @@ header{
 	padding: 7px 0;
 	font-size: 24px;
 	font-weight: 300;
+}
+.addNewGroupForm{
+	width: 320px; 
+}
+.addNewGroupField{
+	margin: 10px 0 0;
+}
+.addNewFormWrap{
+	text-align: center;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+	border-radius: 3px;
+	padding: 10px 20px;
+}
+.groupSuccessMsg{
+	color: #1cb5a5;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 28px 0;
 }
 .groupList div:nth-child(1){
 	flex: 1;
