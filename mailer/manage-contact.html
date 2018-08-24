@@ -6,7 +6,6 @@
 	</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" /> 
 	<link rel="stylesheet" type="text/css" href="assets/style.css" />
-	<script src="assets/action.js"></script>
 </head>
 <body>
 	<header>
@@ -25,7 +24,7 @@
 	</header>
 	<div class="mainWrap">
 		<div id="mySidenav" class="sidenav">
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="javascript: void(0);" class="closebtn" onclick="closeNav();">&times;</a>
 		  <a href="#"><span class="sidenavIcon1"></span>Dashboard</a>
 		  <div class="leftNavSeperator"></div>
 		  <a href="#" class="active"><span class="sidenavIcon2Active"></span>Manage Contact</a>
@@ -120,7 +119,7 @@
 		  	</div>
 		  	<div class="widget4">
 		  		<div class="addNewGroupForm">
-		  			<button name="add_new_group" class="addGroupButton" onclick="showAddNewGroup()">Add new group</button>
+		  			<button name="add_new_group" class="addGroupButton" onclick="showAddNewGroup();">Add New Group</button>
 	  				<div id="addNewGroup" class="addNewFormWrap" style="display: none;">
 	  					<div class="">
 	  						<form method="post" action="">
@@ -147,7 +146,7 @@
 		  			<div>
 		  				<a href="" class="deleteIcon"></a>
 		  				<span class="iconSeperator"></span>
-		  				<a href="" class="editIcon"></a>
+		  				<a href="javascript: void(0);" class="editIcon" onclick="showLightBox();"></a>
 		  			</div>
 		  		</div>
 		  		<div class="groupList">
@@ -162,15 +161,28 @@
 		  </div>
 		</div>
 	</div>
-	<script>
-	function openNav(){
-	    document.getElementById("mySidenav").style.width = "318px";
-	    document.getElementById("main").style.marginLeft = "318px";
-	}
-	function closeNav(){
-	    document.getElementById("mySidenav").style.width = "0";
-	    document.getElementById("main").style.marginLeft= "0";
-	}
-	</script>
+	<div id="lightBox" class="lightBoxWrap" style="display: none;">
+		<div id="lightBoxClose" class="lightBoxContent">
+			<div class="lightBoxClose" onclick="closeLightBox();">&times;</div>
+			<div class="addNewGroupForm">
+	  			<button name="add_new_group" class="addGroupButton">Edit Group</button>
+  				<div id="editGroup" class="addNewFormWrap">
+  					<div class="">
+  						<form method="post" action="">
+		  					<input type="text" name="groupName" placeholder="Group Name" maxlength="250" />
+		  					<div class="error">
+		  						Please enter Group Name
+		  					</div>
+		  					<button name="submit_new_group" class="addGroupButton" style="width: 150px;font-weight: 300">Add Group</button>
+			  			</form>
+  					</div>
+		  			<div class="groupSuccessMsg none">
+  						GROUP ADDED SUCCESSFULLY
+  					</div>
+		  		</div>
+		  	</div>
+		</div>
+	</div>
+	<script src="assets/action.js"></script>
 </body>
 </html>
