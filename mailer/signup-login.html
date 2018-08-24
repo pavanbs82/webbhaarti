@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	  Sign Up and Login
+	</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" /> 
+	<link rel="stylesheet" type="text/css" href="assets/style.css" />
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="index.php"><img src="assets/logo.png" alt="WEB POST" title="WEB POST" /></a>
+		</div>
+	</header>
+	<div class="widgetMainWrap">
+		<h1>SIGN UP & LOG IN</h1>
+		<div class="widgetWrap">
+			<div class="leftWidget">
+				<div class="or">
+					OR
+				</div>
+				<h2>SIGN UP</h2>
+				<div id="leftWidgetForm" class="leftWidgetForm">
+					<form method="post" action="">
+		  				<div>
+		  					<input type="text" name="user_name" placeholder="User Name" maxlength="250" required="required" />
+		  					<div class="error">
+		  						Please enter User Name
+		  					</div>
+		  					<div class="error">
+		  						User Name must be atleast four character
+		  					</div>
+		  					<div class="spacer_10"></div>
+		  				</div>
+		  				<div>
+		  					<input type="email" name="email_address" placeholder="E-Mail" maxlength="250" required="required" />
+		  					<div class="error">
+		  						Please enter E-Mail
+		  					</div>
+		  					<div class="error">
+		  						Please enter valid E-Mail
+		  					</div>
+		  					<div class="spacer_10"></div>
+		  				</div>
+		  				<div class="textLeft">
+		  					<input type="checkbox" name="termsCondition" id="tc" /><label for="tc">I agree to <a href="#">Terms Of Service</a> & <a href="#">Privacy Policy</a></label>
+		  					<div class="error">
+		  						Please agree to Terms Of Service & Privacy Policy
+		  					</div>
+		  					<div class="error">
+		  						This user is already registered with us. Please use another user name & email to Sign Up
+		  					</div>
+		  					<div class="spacer_6"></div>
+		  				</div>
+		  				<button name="add_contact" class="addContactButton">SIGN UP</button>
+		  			</form>
+	  			</div>
+	  			<div class="signUpSuccessWrap none">
+	  				<div class="signUpSuccess">
+	  					CONRATULATIONS!!!
+	  				</div>
+	  				Thank you for registering with us. Your log in credentials are sent to your email account.
+	  			</div>
+			</div>
+			<div class="rightWidget">
+				<div id="rightWidgetForm" class="rightWidgetForm none">
+					<h3>LOG IN</h3>
+					<div class="spacer_10"></div>
+					<form method="post" action="">
+		  				<div>
+		  					<input type="text" name="user_name" placeholder="User Name" maxlength="250" required="required" />
+		  					<div class="error">
+		  						Please enter User Name
+		  					</div>
+		  					<div class="error">
+		  						Please enter User Name registered with us
+		  					</div>
+		  					<div class="spacer_10"></div>
+		  				</div>
+		  				<div>
+		  					<input type="password" name="user_password" placeholder="Password" maxlength="250" required="required" />
+		  					<div class="error">
+		  						Please enter Password
+		  					</div>
+		  					<div class="error">
+		  						Please enter valid User Name or Password
+		  					</div>
+		  					<div class="spacer_20"></div>
+		  				</div>
+		  				<div class="spacer_6"></div>
+		  				<button name="add_contact" class="addContactButton">LOG IN</button>
+		  				<div class="spacer_6"></div>
+		  				<div class="forgotPass">
+		  					<a href="#">Forgot Password?</a>
+		  				</div>
+		  			</form>
+				</div>
+				<div id="retrievePassword" class="">
+					<h4>Retrieve your password via Email</h4>
+					<div id="retrievePasswordForm" class="retrievePasswordForm none">
+						Enter the email that you are registered with & we'll help you in retrieving your password.
+						<div class="spacer_20"></div>
+						<form method="post" action="">
+							<div>
+			  					<input type="email" name="reset_password" placeholder="E-Mail" maxlength="250" required="required" />
+			  					<div class="error">
+			  						Please enter valid E-Mail id
+			  					</div>
+			  					<div class="spacer_10"></div>
+			  					<button name="send_password" class="addContactButton">Send Password</button>
+			  				</div>
+						</form>
+					</div>
+					<div class="signUpSuccessWrap">
+		  				<div class="retrievePasswordTitle">
+		  					YOUR PASSWORD IS RESET SUCCESSFULLY
+		  				</div>
+		  				We have sent an email to you.<br />
+		  				Please check your mail inbox / spam folder.
+		  				<div class="spacer_10"></div>
+		  				<button name="login_now" class="addContactButton">Login Now</button>
+		  			</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyRight">
+			&copy; 2018 web post. All Rights Reserved | Design by <a href="//webbhaarti.in" target="_blank">Webbhaarti</a>
+		</div>
+	</div>
+</body>
+</html>
